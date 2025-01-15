@@ -40,10 +40,10 @@ html {
 }
 
 #content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #card {
@@ -64,7 +64,12 @@ html {
     font-family:'Figtree-bold';
   }
 
-  h1:hover {
+  a {
+    text-decoration:none;
+    color:black;
+  }
+
+  a:hover {
     color: #F5D04E;
   }
 
@@ -77,23 +82,24 @@ html {
     font-family:'Figtree-bold';
   }
 
-  .autor {
-    font-family:'Figtree-bold';
-    margin: 2px 5px;
-  }
 
   .description {
     color:#6C6C6C;
   }
-}
 
-.profile {
-  display: flex;
-  justify-content: middle;
-  
-  img {
-    width: 25px;
-    height: 25px;
+  .profile {
+    display: flex;
+    justify-content: middle;
+    
+    img {
+      width: 25px;
+      height: 25px;
+    }
+
+    .autor {
+      font-family:'Figtree-bold';
+      margin: 2px 5px;
+    }
   }
 }
 
